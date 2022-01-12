@@ -49,11 +49,11 @@ For this first example we will practice identifying what CircleCI features are b
 
 Here we are viewing a completed workflow. This was a successful build that completed in 21m47s. 
 
-<img src="buildallsuccess.png">
+<img src="images/buildallsuccess.png">
 
 What can we identify from this workflow page? 
 
 Is this customer running concurrent jobs? 
 
-- [X] Yes
+- [ ] Yes
 - [ ] No 
