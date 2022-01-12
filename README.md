@@ -38,3 +38,9 @@ The ability to view config from several locations makes jumping to viewing confi
 When viewing config, CircleCI will also alert you if the config file you are viewing is out of date, as seen below. 
 
 <img src="images/olderconfig.png">
+
+## Customer Examples
+
+Let's look at a few simple example configs and where we might suggest optimizing the config.
+
+
