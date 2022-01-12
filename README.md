@@ -53,4 +53,7 @@ Here we are viewing a completed workflow. This was a successful build that compl
 
 What can we identify from this workflow page? 
 
-- Is this customer running concurrent jobs? Yes [ ] No [ ] 
+Is this customer running concurrent jobs? 
+
+- [ ] Yes
+- [ ] No 
