@@ -70,3 +70,14 @@ Is this configuration file a current version?
 - [ ] No
 
 Locate the `version` key. 
+
+What version of CircleCI is being used? 
+
+- [ ] version 2.1
+- [ ] version 2
+- [ ] version 1
+
+Is this customer utilizing orbs? 
+
+- [ ] Yes
+- [ ] No
