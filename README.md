@@ -64,7 +64,7 @@ Is this customer running concurrent jobs?
 
 Let's hop into the config. Remember from above how to view a config from the workflow. 
 
-Is this configuration file up to date? 
+Is this configuration file a current version? 
 
 - [ ] Yes
 - [ ] No
