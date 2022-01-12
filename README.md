@@ -41,7 +41,9 @@ When viewing config, CircleCI will also alert you if the config file you are vie
 
 ## Customer Examples
 
-Let's look at a few simple example configs and where we might suggest optimizing the config.
+Let's look at a few simple example configs and where we might suggest optimizing the config. Some config files can be overwhelming with their size. An easy way to sift through the config is to `command/control + f` and search for keywords.
+
+<img src="images/searchconfig.png">
 
 ### Example 1
 
@@ -67,3 +69,4 @@ Is this configuration file up to date?
 - [ ] Yes
 - [ ] No
 
+Locate the `version` key. 
