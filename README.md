@@ -51,9 +51,19 @@ Here we are viewing a completed workflow. This was a successful build that compl
 
 <img src="images/buildallsuccess.png">
 
-What can we identify from this workflow page? 
+**What can we identify from this workflow page?** 
 
 Is this customer running concurrent jobs? 
 
 - [ ] Yes
 - [ ] No 
+
+**Review the Config**
+
+Let's hop into the config. Remember from above how to view a config from the workflow. 
+
+Is this configuration file up to date? 
+
+- [ ] Yes
+- [ ] No
+
