@@ -43,4 +43,14 @@ When viewing config, CircleCI will also alert you if the config file you are vie
 
 Let's look at a few simple example configs and where we might suggest optimizing the config.
 
+### Example 1
 
+For this first example we will practice identifying what CircleCI features are being used in the build. Navigate to this [customer build](https://app.circleci.com/pipelines/github/ethereum/remix-project/6479/workflows/6951972b-3edf-47ee-9345-45dce4d2f9a6). 
+
+Here we are viewing a completed workflow. This was a successful build that completed in 21m47s. 
+
+<img src="buildallsuccess.png">
+
+What can we identify from this workflow page? 
+
+- Is this customer running concurrent jobs? Yes [ ] No [ ] 
