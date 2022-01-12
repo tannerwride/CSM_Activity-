@@ -12,3 +12,5 @@ In this activity, we will walk through the process of identifying CircleCI featu
 There are several ways to view customer config files. 
 
 - On the Dashboard, through the "three dots"
+
+<img src="images/configfrompipeline.png">
