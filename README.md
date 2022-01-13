@@ -99,4 +99,16 @@ The first step is to identify if a customer is testing as part of their pipeline
 - [ ] Yes
 - [ ] No
 
-Excellent. We see that this customer is indeed testing. 
+Excellent. We see that this customer is indeed testing. Next, is this customer utilizing parallelism and test splitting? Let's search for `parallelism`. We can see there are two instances of the parallelism key. For each of these keys, what level of parallelism is being used? 
+
+- [ ] 10
+- [ ] 8
+- [ ] 4
+
+Recall from the CircleUp courses that parallelism and test splitting go hand in hand. Now that we have seen the parallelism key, search for the CircleCI CLI to see how these tests will be split across the nodes. From your search, how are these tests being split? 
+
+- [ ] Timing Data
+- [ ] File Size
+- [ ] File Name
+
+
