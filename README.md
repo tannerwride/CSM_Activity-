@@ -71,20 +71,28 @@ Let's hop into the config. Remember from above how to view a config from the wor
 Is this configuration file the most current version? 
 
 - [ ] Yes
-- [ ] No
+- [x] No
+
+You will see at the top that "You are viewing an older version...".
 
 Locate the `version` key. 
 
 What version of CircleCI is being used? 
 
 - [ ] version 2.1
-- [ ] version 2
+- [x] version 2
 - [ ] version 1
+
+<img src="images/version2example.png">
+
+In this case, the customer is using an older version of CircleCI at version: 2. In this scenario, it may be worth asking questions around why they are not on the current version and the benefits of upgrading. A big benefit of 2.1 is [reusable config](https://circleci.com/docs/2.0/reusing-config/). 
 
 Is this customer utilizing orbs? 
 
 - [ ] Yes
-- [ ] No
+- [x] No
+
+By searching the configuration file, it can be seen that there are no orbs in use. Here, you can ask questions about repeating configuration, and if they have certain yaml that they use over and over and point them in the direction of using [orbs](https://circleci.com/developer/orbs). (Private or public). 
 
 Next let's identify what type of executors are being used in this configuration. Each job in a circleci config needs to have an executor associated with it. Executors can be defined using an `executor` key at the top of a config file (requires version:2.1), and then referenced in a job later, or defined in a job iteslf. 
 
