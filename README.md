@@ -90,3 +90,13 @@ In this customer example, a docker executor is being used in the job titled `rem
 - [ ] A next-gen CircleCI convenience image
 - [ ] A custom image from dockerhub
 
+**Next, let's jump into a fun topic, parallelism and test splitting!!!**
+
+There are several ways to identify if a customer is testing, splitting their tests, and uploading their test data. Since we have been viewing a config file, let's start there. Navigate to this [customer config file](https://app.circleci.com/projects/github/maalox/digihaler-flutter/config/?branchName=master&pipelineNumber=12673). 
+
+The first step is to identify if a customer is testing as part of their pipeline. One easy way to do that is to search for the work `test`. Do any of the jobs in this config file contain the word test? 
+
+- [ ] Yes
+- [ ] No
+
+Excellent. We see that this customer is indeed testing. 
