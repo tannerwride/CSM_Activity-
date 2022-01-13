@@ -112,7 +112,7 @@ There are several ways to identify if a customer is testing, splitting their tes
 
 The first step is to identify if a customer is testing as part of their pipeline. One easy way to do that is to search for the work `test`. Do any of the jobs in this config file contain the word test? 
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 
 Excellent. We see that this customer is indeed testing. Next, is this customer utilizing parallelism and test splitting? Let's search for `parallelism`. We can see there are two instances of the parallelism key. For each of these keys, what level of parallelism is being used? 
