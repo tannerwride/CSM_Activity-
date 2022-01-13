@@ -57,8 +57,12 @@ Here we are viewing a completed workflow. This was a successful build that compl
 
 Is this customer running concurrent jobs? 
 
-- [ ] Yes
+- [x] Yes
 - [ ] No 
+
+You can tell that this customer is using concurrency from the workflow page. Jobs publish -> remix-libs are running concurrently. 
+
+<img src="images/concurrentworkflow.png">
 
 #### Review the Config
 
