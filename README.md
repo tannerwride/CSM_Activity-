@@ -64,7 +64,7 @@ Is this customer running concurrent jobs?
 
 Let's hop into the config. Remember from above how to view a config from the workflow. 
 
-Is this configuration file a current version? 
+Is this configuration file the most current version? 
 
 - [ ] Yes
 - [ ] No
@@ -81,3 +81,12 @@ Is this customer utilizing orbs?
 
 - [ ] Yes
 - [ ] No
+
+Next let's identify what type of executors are being used in this configuration. Each job in a circleci config needs to have an executor associated with it. Executors can be defined using an `executor` key at the top of a config file (requires version:2.1), and then referenced in a job later, or defined in a job iteslf. 
+
+In this customer example, a docker executor is being used in the job titled `remix-libs`. Are they using a custom image, or a CircleCI convenience image? 
+
+- [ ] A legacy CircleCI convenience image
+- [ ] A next-gen CircleCI convenience image
+- [ ] A custom image from dockerhub
+
