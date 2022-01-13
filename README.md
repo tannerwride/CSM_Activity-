@@ -98,9 +98,13 @@ Next let's identify what type of executors are being used in this configuration.
 
 In this customer example, a docker executor is being used in the job titled `remix-libs`. Are they using a custom image, or a CircleCI convenience image? 
 
-- [ ] A legacy CircleCI convenience image
+- [x] A legacy CircleCI convenience image
 - [ ] A next-gen CircleCI convenience image
 - [ ] A custom image from dockerhub
+
+<img src="images/legacyimage.png">
+
+All convenience images with the prefix "circleci" are now deprecated. It is recommended to use next-generation images when possible. For a list of the latest next-gen convenience images and details about the content of each image, visit the [Developer Hub](https://circleci.com/developer/). [Here](https://circleci.com/blog/announcing-our-next-generation-convenience-images-smaller-faster-more-deterministic/) is a great blog article about the next-gen images.  
 
 **Next, let's jump into a fun topic, parallelism and test splitting!!!**
 
