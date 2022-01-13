@@ -92,7 +92,7 @@ Is this customer utilizing orbs?
 - [ ] Yes
 - [x] No
 
-By searching the configuration file, it can be seen that there are no orbs in use. Here, you can ask questions about repeating configuration, and if they have certain yaml that they use over and over and point them in the direction of using [orbs](https://circleci.com/developer/orbs). (Private or public). 
+By searching the configuration file, it can be seen that there are no orbs in use. We know this because there is no usage of the `orb` key. Here, you can ask questions about repeating configuration, and if they have certain yaml that they use over and over. If so, point them in the direction of using [orbs](https://circleci.com/developer/orbs). (Private or public). 
 
 Next let's identify what type of executors are being used in this configuration. Each job in a circleci config needs to have an executor associated with it. Executors can be defined using an `executor` key at the top of a config file (requires version:2.1), and then referenced in a job later, or defined in a job iteslf. 
 
