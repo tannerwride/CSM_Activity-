@@ -105,7 +105,7 @@ Excellent. We see that this customer is indeed testing. Next, is this customer u
 - [ ] 8
 - [ ] 4
 
-Recall from the CircleUp courses that parallelism and test splitting go hand in hand. Now that we have seen the parallelism key, search for the CircleCI CLI to see how these tests will be split across the nodes. From your search, how are these tests being split? 
+Recall from the CircleUp courses that parallelism and test splitting go hand in hand. Now that we have seen the parallelism key, search for the CircleCI CLI to see how these tests will be split across the nodes. From your search, how are these tests being split? (Hint: try searching for `circleci`).
 
 - [ ] Timing Data
 - [ ] File Size
