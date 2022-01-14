@@ -94,10 +94,10 @@ In this customer example, a docker executor is being used in the job titled `rem
 
 There are several ways to identify if a customer is testing, splitting their tests, and uploading their test data. Since we have been viewing a config file, let's start there. Navigate to this [customer config file](https://app.circleci.com/projects/github/maalox/digihaler-flutter/config/?branchName=master&pipelineNumber=12673). 
 
-The first step is to identify if a customer is testing as part of their pipeline. One easy way to do that is to search for the work `test`. Do any of the jobs in this config file contain the word test? 
+The first step is to identify if a customer is testing as part of their pipeline. One easy way to do that is to search for the work `test`. How many instances of the word "test" are in this file? 
 
-- [ ] Yes
-- [ ] No
+- [ ] 40
+- [ ] 63
 
 Excellent. We see that this customer is indeed testing. Next, is this customer utilizing parallelism and test splitting? Let's search for `parallelism`. We can see there are two instances of the parallelism key. For each of these keys, what level of parallelism is being used? 
 
