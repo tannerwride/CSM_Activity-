@@ -110,16 +110,26 @@ All convenience images with the prefix "circleci" are now deprecated. It is reco
 
 There are several ways to identify if a customer is testing, splitting their tests, and uploading their test data. Since we have been viewing a config file, let's start there. Navigate to this [customer config file](https://app.circleci.com/projects/github/maalox/digihaler-flutter/config/?branchName=master&pipelineNumber=12673). 
 
-The first step is to identify if a customer is testing as part of their pipeline. One easy way to do that is to search for the work `test`. Do any of the jobs in this config file contain the word test? 
+The first step is to identify if a customer is testing as part of their pipeline. One easy way to do that is to search for the work `test`. How many instances of the word "test" are in this file? 
 
-- [x] Yes
-- [ ] No
+- [ ] 40
+- [x] 63
+
+Looking through the results of the search, you can see there are a few jobs that are testing. 
+
+<img src="images/testjobexample.png">
 
 Excellent. We see that this customer is indeed testing. Next, is this customer utilizing parallelism and test splitting? Let's search for `parallelism`. We can see there are two instances of the parallelism key. For each of these keys, what level of parallelism is being used? 
 
 - [ ] 10
 - [ ] 8
-- [ ] 4
+- [x] 4
+
+<img src="images/paralevel.png">
+
+These tests are beings split between 4 nodes (containers). 
+
+<img src="images/parallelui.png">
 
 Recall from the CircleUp courses that parallelism and test splitting go hand in hand. Now that we have seen the parallelism key, search for the CircleCI CLI to see how these tests will be split across the nodes. From your search, how are these tests being split? (Hint: try searching for `circleci`).
 
