@@ -55,7 +55,7 @@ Here we are viewing a completed workflow. This was a successful build that compl
 
 #### What can we identify from this workflow page? 
 
-Is this customer running concurrent jobs? 
+1. Is this customer running concurrent jobs? 
 
 - [x] Yes
 - [ ] No 
@@ -68,7 +68,7 @@ You can tell that this customer is using concurrency from the workflow page. Job
 
 Let's hop into the config. Remember from above how to view a config from the workflow. 
 
-Is this configuration file the most current version? 
+2. Is this configuration file the most current version? 
 
 - [ ] Yes
 - [x] No
@@ -77,7 +77,7 @@ You will see at the top that "You are viewing an older version...".
 
 Locate the `version` key. 
 
-What version of CircleCI is being used? 
+3. What version of CircleCI is being used? 
 
 - [ ] version 2.1
 - [x] version 2
@@ -87,7 +87,7 @@ What version of CircleCI is being used?
 
 In this case, the customer is using an older version of CircleCI at version: 2. In this scenario, it may be worth asking questions around why they are not on the current version and the benefits of upgrading. A big benefit of 2.1 is [reusable config](https://circleci.com/docs/2.0/reusing-config/). 
 
-Is this customer utilizing orbs? 
+4. Is this customer utilizing orbs? 
 
 - [ ] Yes
 - [x] No
@@ -96,7 +96,9 @@ By searching the configuration file, it can be seen that there are no orbs in us
 
 Next let's identify what type of executors are being used in this configuration. Each job in a circleci config needs to have an executor associated with it. Executors can be defined using an `executor` key at the top of a config file (requires version:2.1), and then referenced in a job later, or defined in a job iteslf. 
 
-In this customer example, a docker executor is being used in the job titled `remix-libs`. Are they using a custom image, or a CircleCI convenience image? 
+In this customer example, a docker executor is being used in the job titled `remix-libs`.
+
+5. Are they using a custom image, or a CircleCI convenience image? 
 
 - [x] A legacy CircleCI convenience image
 - [ ] A next-gen CircleCI convenience image
@@ -110,7 +112,9 @@ All convenience images with the prefix "circleci" are now deprecated. It is reco
 
 There are several ways to identify if a customer is testing, splitting their tests, and uploading their test data. Since we have been viewing a config file, let's start there. Navigate to this [customer config file](https://app.circleci.com/projects/github/maalox/digihaler-flutter/config/?branchName=master&pipelineNumber=12673). 
 
-The first step is to identify if a customer is testing as part of their pipeline. One easy way to do that is to search for the work `test`. How many instances of the word "test" are in this file? 
+The first step is to identify if a customer is testing as part of their pipeline. One easy way to do that is to search for the work `test`. 
+
+6. How many instances of the word "test" are in this file? 
 
 - [ ] 40
 - [x] 63
@@ -119,7 +123,9 @@ Looking through the results of the search, you can see there are a few jobs that
 
 <img src="images/testjobexample.png">
 
-Excellent. We see that this customer is indeed testing. Next, is this customer utilizing parallelism and test splitting? Let's search for `parallelism`. We can see there are two instances of the parallelism key. For each of these keys, what level of parallelism is being used? 
+Excellent. We see that this customer is indeed testing. Next, is this customer utilizing parallelism and test splitting? Let's search for `parallelism`. We can see there are two instances of the parallelism key. 
+
+7. For each of these keys, what level of parallelism is being used? 
 
 - [ ] 10
 - [ ] 8
@@ -131,7 +137,9 @@ These tests are beings split between 4 nodes (containers).
 
 <img src="images/parallelui.png">
 
-Recall from the CircleUp courses that parallelism and test splitting go hand in hand. Now that we have seen the parallelism key, search for the CircleCI CLI to see how these tests will be split across the nodes. From your search, how are these tests being split? (Hint: try searching for `circleci`).
+Recall from the CircleUp courses that parallelism and test splitting go hand in hand. Now that we have seen the parallelism key, search for the CircleCI CLI to see how these tests will be split across the nodes. 
+
+8. From your search, how are these tests being split? (Hint: try searching for `circleci`).
 
 - [x] Timing Data
 - [ ] File Size
