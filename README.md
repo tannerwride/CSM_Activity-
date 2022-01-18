@@ -147,4 +147,4 @@ Recall from the CircleUp courses that parallelism and test splitting go hand in 
 
 <img src="images/splitbytimings.png">
 
-Here, we can see that the customer is splitting their tests by timing data as indicated by the CircleCI command line. This is the best way to split tests and is only possible if they are also using the `store_test_results` key. 
+Here, we can see that the customer is splitting their tests by timing data as indicated by the CircleCI command line. This is the best way to split tests and is only possible if they are also using the `store_test_results` key. For a review on the different ways to split tests with the CLI, see [Running Tests in Parallel](https://circleci.com/docs/2.0/parallelism-faster-jobs/#running-split-tests). 
