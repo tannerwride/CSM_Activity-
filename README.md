@@ -133,8 +133,10 @@ These tests are beings split between 4 nodes (containers).
 
 Recall from the CircleUp courses that parallelism and test splitting go hand in hand. Now that we have seen the parallelism key, search for the CircleCI CLI to see how these tests will be split across the nodes. From your search, how are these tests being split? (Hint: try searching for `circleci`).
 
-- [ ] Timing Data
+- [x] Timing Data
 - [ ] File Size
 - [ ] File Name
 
+<img src="images/splitbytimings.png">
 
+Here, we can see that the customer is splitting their tests by timing data as indicated by the CircleCI command line. This is the best way to split tests and is only possible if they are also using the `store_test_results` key. 
