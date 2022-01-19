@@ -120,3 +120,13 @@ Recall from the CircleUp courses that parallelism and test splitting go hand in 
 - [ ] File Name
 
 
+### Example 2
+
+Let's jump to another config file and look for some areas of optimization. Navigate to [this](https://app.circleci.com/projects/github/mysugr/logbook-android/config/?branchName=develop&pipelineNumber=30890) config file. 
+
+1. Looking at line 1 of this config file, what is different than previous config files? 
+
+- [ ] No version key? 
+- [ ] Using an old version of CircleCI
+
+Next, let's figure out if this customer is building their own docker images. 
