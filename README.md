@@ -148,3 +148,25 @@ Recall from the CircleUp courses that parallelism and test splitting go hand in 
 <img src="images/splitbytimings.png">
 
 Here, we can see that the customer is splitting their tests by timing data as indicated by the CircleCI command line. This is the best way to split tests and is only possible if they are also using the `store_test_results` key. For a review on the different ways to split tests with the CLI, see [Running Tests in Parallel](https://circleci.com/docs/2.0/parallelism-faster-jobs/#running-split-tests). 
+
+### Example 2
+
+Let's jump to another config file and look for some areas of optimization. Navigate to [this](https://app.circleci.com/projects/github/mysugr/logbook-android/config/?branchName=develop&pipelineNumber=30890) config file. 
+
+1. Looking at line 1 of this config file, what is different than previous config files? 
+
+- [ ] No version key? 
+- [ ] Using an old version of CircleCI
+
+Next, let's figure out if this customer is building their own docker images. Customers are often building their own docker images when their application or product is deployed using container technology. This includes the pushing and building of these containers that their product consists of. Try searching for docker compose or docker build commands by searching for the word `docker`. 
+
+2. What is the name of the job that contains one of these commands? 
+
+- [ ] manuals_generate
+- [ ] assemble_alpha
+
+3. Looking at this job and thinking back to earlier training, what might you suggest to optimize this job? 
+
+- [ ] They are already using docker layer caching, so using a parameters key.
+- [ ] Definitely docker layer caching
+- [ ] Dependency caching
