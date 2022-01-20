@@ -129,4 +129,15 @@ Let's jump to another config file and look for some areas of optimization. Navig
 - [ ] No version key? 
 - [ ] Using an old version of CircleCI
 
-Next, let's figure out if this customer is building their own docker images. 
+Next, let's figure out if this customer is building their own docker images. Customers are often building their own docker images when their application or product is deployed using container technology. This includes the pushing and building of these containers that their product consists of. Try searching for docker compose or docker build commands by searching for the word `docker`. 
+
+2. What is the name of the job that contains one of these commands? 
+
+- [ ] manuals_generate
+- [ ] assemble_alpha
+
+3. Looking at this job and thinking back to earlier training, what might you suggest to optimize this job? 
+
+- [ ] They are already using docker layer caching, so using a parameters key.
+- [ ] Definitely docker layer caching
+- [ ] Dependency caching
