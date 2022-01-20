@@ -155,18 +155,30 @@ Let's jump to another config file and look for some areas of optimization. Navig
 
 1. Looking at line 1 of this config file, what is different than previous config files? 
 
-- [ ] No version key? 
+- [x] No version key? 
 - [ ] Using an old version of CircleCI
+
+This config file does not have a version key on line one, but does have a version key. In this case, they are using the commands key, which is only available at version: 2.1. This can be found down on line 1035. In YAML, order does not necessarily matter. 
+
+<img src="images/example2version.png">
 
 Next, let's figure out if this customer is building their own docker images. Customers are often building their own docker images when their application or product is deployed using container technology. This includes the pushing and building of these containers that their product consists of. Try searching for docker compose or docker build commands by searching for the word `docker`. 
 
 2. What is the name of the job that contains one of these commands? 
 
-- [ ] manuals_generate
+- [x] manuals_generate
 - [ ] assemble_alpha
 
 3. Looking at this job and thinking back to earlier training, what might you suggest to optimize this job? 
 
 - [ ] They are already using docker layer caching, so using a parameters key.
-- [ ] Definitely docker layer caching
+- [x] Docker layer caching
 - [ ] Dependency caching
+
+To first tell if a customer is using DLC, search for the `docker_layer_caching: true` key. From searching, we see that there is no usage of this key, and therefore they are not using DLC. 
+
+<img src="images/nodockerlayercaching.png">
+
+**How to know if DLC is appropriate?**
+
+Note that DLC will only reduce the time it takes to build your own Docker images with docker build, docker compose, or similar docker commands in a remote Docker environment. It does not affect the time it takes to spin up the primary Docker container. If you are running your pipelines in a Docker container but not building new images as part of your workflow, then you will not see any reduction in build times by implementing DLC.
