@@ -184,3 +184,5 @@ To first tell if a customer is using DLC, search for the `docker_layer_caching: 
 Note that DLC will only reduce the time it takes to build your own Docker images with docker build, docker compose, or similar docker commands in a remote Docker environment. It does not affect the time it takes to spin up the primary Docker container. If you are running your pipelines in a Docker container but not building new images as part of your workflow, then you will not see any reduction in build times by implementing DLC.
 
 Since we have seen that this config utilizes docker compose, it is worth suggesting DLC by adding the `docker_layer_caching: true` key under the job. 
+
+<img src="images/dlcjob.png">
