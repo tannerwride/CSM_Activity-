@@ -13,7 +13,7 @@ To view answers and possible optimization ideas, switch to the answers branch.
 ## Prereqs 
 
 - Permission to view customer config files and builds
-- Completion of the CSM training in CircleUP titled "Filler"
+- Completion of the CSM training in CircleUP 
 
 ## Viewing Customer Configuration Files 
 
