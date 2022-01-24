@@ -8,6 +8,8 @@ There are two branches to this file, the main branch and the answers branch. The
 
 To view answers and possible optimization ideas, switch to the answers branch. 
 
+<img src="images/answers.png">
+
 ## Prereqs 
 
 - Permission to view customer config files and builds
