@@ -1,6 +1,12 @@
-# CSM_Activity
+# CSM Hands on Activity
 
 In this activity, we will walk through the process of identifying CircleCI features in a `config.yml` file and look for areas of optimization. 
+
+## How to use this README
+
+There are two branches to this file, the main branch and the answers branch. The main branch will give instructions for viewing config files and questions associated with the file. 
+
+To view answers and possible optimization ideas, switch to the answers branch. 
 
 ## Prereqs 
 
