@@ -41,6 +41,12 @@ There are several ways to view customer config files.
 
 The ability to view config from several locations makes jumping to viewing config easy, depending on what you may be doing. If you are troubleshooting a specific workflow, you can switch to the config quickly. If you are working on optimization by viewing insights, you can easily view the associated configuration file, etc.
 
+### Practice Viewing Customer Config
+
+Practice navigating to customer config with the following scenario:
+
+- Locate a customer's config file for the project that is consuming the most credits
+
 ### Viewing Older Configuration Files
 
 When viewing config, CircleCI will also alert you if the config file you are viewing is out of date, as seen below. 
